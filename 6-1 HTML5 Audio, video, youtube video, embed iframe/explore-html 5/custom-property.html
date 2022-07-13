@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property</title>
+    <style>
+        :root{
+            --header-color: rgb(0, 225, 255);
+            --header-border: 2px solid black;
+            --main-color: white;
+            --main-background-color: brown;
+            --footer-color: rgb(71, 249, 255);
+            --footer-background-color: rgb(0, 0, 82);
+        }
+        h1{
+            color: var(--header-color);
+            border: var(--header-border);
+        }
+        h2{
+            color: var(--main-color);
+            background-color: var(--main-background-color);
+        }
+        h3{
+            color: var(--footer-color);
+            background-color: var(--footer-background-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is header section</h1>
+    </header>
+    <main>
+        <h2>This is main part for custom Property</h2>
+    </main>
+    <footer>
+        <h3>It's a footer section.</h3>
+    </footer>
+</body>
+</html>
